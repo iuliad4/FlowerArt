@@ -1,0 +1,143 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f6f5f0;
+  color: #3e3c2f;
+  margin: 0;
+  padding: 0px 0px;
+}
+
+.titlu-galerie {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #2d5c33;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.descriere-galerie {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7a5b3e;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectiune {
+  margin-bottom: 60px;
+}
+
+.sectiune h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #2d5c33;
+  border-bottom: 2px solid #7a5b3e;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galerie img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  .galerie {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .galerie {
+    grid-template-columns: 1fr;
+  }
+}
+.meniu-site {
+  background-color: #e7e4dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Logo stilizat */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f2e1e;
+  font-family: 'Georgia', serif;
+}
+
+/* Lista de linkuri */
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Linkuri stilizate cu linie animată */
+.meniu-site li a {
+  position: relative;
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;
+}
+
+/* Animatie la încărcare */
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}

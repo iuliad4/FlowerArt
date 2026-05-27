@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curiozități despre flori</title>
+  <link rel="stylesheet" href="curiozitati.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="fundal-decor" aria-hidden="true"></div>
+  <!-- Panouri la margini: cuprins + căutare & progres -->
+  <aside class="panou-margine panou-stanga" aria-label="Cuprins pagină">
+    <p class="panou-titlu">Cuprins</p>
+    <nav class="cuprins" id="cuprins">
+      <a href="#trandafir" class="link-cuprins" data-id="trandafir"><span class="ico">🌹</span> Trandafir</a>
+      <a href="#lalea" class="link-cuprins" data-id="lalea"><span class="ico">🌷</span> Lalea</a>
+      <a href="#margareta" class="link-cuprins" data-id="margareta"><span class="ico">🌼</span> Margareta</a>
+      <a href="#orhidee" class="link-cuprins" data-id="orhidee"><span class="ico">🌺</span> Orhidee</a>
+      <a href="#crin" class="link-cuprins" data-id="crin"><span class="ico">🌸</span> Crin</a>
+      <a href="#bujor" class="link-cuprins" data-id="bujor"><span class="ico">🌺</span> Bujor</a>
+      <a href="#floarea-soarelui" class="link-cuprins" data-id="floarea-soarelui"><span class="ico">🌻</span> Floarea-soarelui</a>
+      <a href="#lacramioara" class="link-cuprins" data-id="lacramioara"><span class="ico">🌼</span> Lăcrămioara</a>
+      <a href="#narcisa" class="link-cuprins" data-id="narcisa"><span class="ico">🌼</span> Narcisă</a>
+      <a href="#hibiscus" class="link-cuprins" data-id="hibiscus"><span class="ico">🌺</span> Hibiscus</a>
+      <a href="#lavanda" class="link-cuprins" data-id="lavanda"><span class="ico">💜</span> Lavandă</a>
+      <a href="#dahlia" class="link-cuprins" data-id="dahlia"><span class="ico">🌸</span> Dahlia</a>
+      <a href="#iris" class="link-cuprins" data-id="iris"><span class="ico">⚜️</span> Iris</a>
+      <a href="#magnolie" class="link-cuprins" data-id="magnolie"><span class="ico">🌸</span> Magnolie</a>
+      <a href="#lotus" class="link-cuprins" data-id="lotus"><span class="ico">🪷</span> Lotus</a>
+      <a href="#gardenia" class="link-cuprins" data-id="gardenia"><span class="ico">🤍</span> Gardenia</a>
+      <a href="#frezie" class="link-cuprins" data-id="frezie"><span class="ico">💐</span> Frezie</a>
+      <a href="#anemona" class="link-cuprins" data-id="anemona"><span class="ico">🌺</span> Anemonă</a>
+      <a href="#gladiol" class="link-cuprins" data-id="gladiol"><span class="ico">🌷</span> Gladiol</a>
+    </nav>
+  </aside>
+
+  <aside class="panou-margine panou-dreapta" aria-label="Căutare și progres">
+    <p class="panou-titlu">Caută floare</p>
+    <label class="label-ascuns" for="cautaFlori">Filtrează lista</label>
+    <input type="search" id="cautaFlori" class="camp-cautare" placeholder="ex: lalea, crin…" autocomplete="off" />
+    <button type="button" class="btn-reset" id="btnReset" hidden>Arată toate</button>
+
+    <p class="panou-titlu panou-titlu-spatiu">Progres citire</p>
+    <div class="bara-progres" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="baraProgresWrap">
+      <div class="bara-fill" id="baraProgres"></div>
+    </div>
+    <p class="progres-text" id="progresText">0%</p>
+
+    <div class="sectiune-curenta" id="sectiuneCurenta">
+      <p class="eticheta-curent">Citești acum</p>
+      <p class="nume-curent" id="numeCurent">—</p>
+    </div>
+
+    <button type="button" class="btn-sus" id="btnSus" hidden title="Înapoi sus">↑ Sus</button>
+  </aside>
+<header>
+  <nav class="meniu-site">
+    <div class="logo">🌸 FlowerArt</div>
+        </li>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="/Diversitatea florilor.html">Diversitatea florilor</a></li>
+        <li><a href="/istorie.html">Istoria florilor</a></li>
+        <li><a href="/Galerie.html">Galerie de buchete</a></li>
+        <li><a href="/curiozitati.html" class="activ">Curiozități semnificative</a></li>
+        <li><a href="/calatoria.html">Calatoria unei flori</a></li>
+        <li><a href="8martie.html">8 Martie</a></li>
+        <li><a href="Calendarul florilor.html">Calendarul florilor</a></li>
+        <li><a href="rolul-florilor.html">Rolul florilor</a></li>
+        <li><a href="forum.html">Forum & Contact</a></li>
+      </ul>
+    </nav>
+   
+
+    <div class="antet-pagina">
+      <p class="eticheta-antet">FlowerArt · Enciclopedia florilor</p>
+      <h1 class="titlu-pagina">Curiozități despre flori</h1>
+      <div class="ornament-titlu" aria-hidden="true"><span>✿</span><span>❀</span><span>✿</span></div>
+      <p class="descriere">Descoperă lucruri uimitoare despre cele mai îndrăgite flori din lume – simboluri ale frumuseții, iubirii și naturii delicate.</p>
+      <p class="stat-antet"><span class="stat-nr">18</span> flori · <span class="stat-nr">54+</span> curiozități de descoperit</p>
+      <div class="cautare-mobila">
+        <label class="label-ascuns" for="cautaFloriMobil">Caută floare</label>
+        <input type="search" id="cautaFloriMobil" class="camp-cautare" placeholder="Caută o floare…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <main class="continut">
+    <p class="intro-continut">Fiecare card de mai jos adună trei fapte surprinzătoare. Derulează sau folosește cuprinsul din stânga.</p>
+
+    <section class="floare" id="trandafir">
+      <h2><span class="emoji-flor">🌹</span> Trandafir</h2>
+      <ul>
+        <li>Există peste 100 de specii de trandafiri.</li>
+        <li>Trandafirii sunt printre cele mai vechi flori cultivate de oameni.</li>
+        <li>Unele trandafiri sunt comestibili și folosiți în ceaiuri și dulciuri.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="lalea">
+      <h2><span class="emoji-flor">🌷</span> Lalea</h2>
+      <ul>
+        <li>Olandezii au avut o „laliemanie” în secolul XVII, când o lalea valora cât o casă.</li>
+        <li>Lalelele nu sunt originare din Olanda, ci din Asia Centrală.</li>
+        <li>Există peste 3.000 de varietăți de lalele.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="margareta">
+      <h2><span class="emoji-flor">🌼</span> Margareta</h2>
+      <ul>
+        <li>Margareta simbolizează inocența și sinceritatea.</li>
+        <li>Este alcătuită din două flori în una: discul central și petalele.</li>
+        <li>Margaretele înfloresc din iunie până toamna târziu.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="orhidee">
+      <h2><span class="emoji-flor">🌺</span> Orhidee</h2>
+      <ul>
+        <li>Orhideele pot trăi până la 100 de ani.</li>
+        <li>Există peste 25.000 de specii de orhidee în lume.</li>
+        <li>Unele flori de orhidee imită forma insectelor pentru polenizare.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="crin">
+      <h2><span class="emoji-flor">🌸</span> Crin</h2>
+      <ul>
+        <li>Crinul alb simbolizează puritatea și regalitatea.</li>
+        <li>Toate părțile crinului sunt toxice pentru pisici.</li>
+        <li>Crinii au un parfum intens, natural.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="bujor">
+      <h2><span class="emoji-flor">🌺</span> Bujor</h2>
+      <ul>
+        <li>Bujorii trăiesc zeci de ani, chiar peste 50.</li>
+        <li>În China, bujorul este numit „regele florilor”.</li>
+        <li>Simbolizează dragostea, onoarea și bogăția.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="floarea-soarelui">
+      <h2><span class="emoji-flor">🌻</span> Floarea-soarelui</h2>
+      <ul>
+        <li>Se rotește după soare – fenomen numit heliotropism.</li>
+        <li>Poate atinge peste 3 metri în înălțime.</li>
+        <li>Florile sunt în realitate compuse din sute de flori mici.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="lacramioara">
+      <h2><span class="emoji-flor">🌼</span> Lăcrămioara</h2>
+      <ul>
+        <li>Este simbolul speranței și reînnoirii primăverii.</li>
+        <li>Este foarte parfumată, dar extrem de toxică.</li>
+        <li>Este floarea națională a Finlandei.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="narcisa">
+      <h2><span class="emoji-flor">🌼</span> Narcisă</h2>
+      <ul>
+        <li>Asociată cu mitul lui Narcis din Grecia Antică.</li>
+        <li>Înflorește la începutul primăverii.</li>
+        <li>Există peste 50 de specii de narcise.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="hibiscus">
+      <h2><span class="emoji-flor">🌺</span> Hibiscus</h2>
+      <ul>
+        <li>Hibiscusul este folosit în ceaiuri răcoritoare.</li>
+        <li>Simbolizează frumusețea delicată și feminitatea.</li>
+        <li>În unele culturi, este purtat în păr de femei necăsătorite.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="lavanda">
+      <h2><span class="emoji-flor">💜</span> Lavandă</h2>
+      <ul>
+        <li>Câmpurile de lavandă din Provence atrag milioane de vizitatori pe an.</li>
+        <li>Uleiul de lavandă a fost folosit din antichitate pentru calm și somn.</li>
+        <li>Albinele adoră lavanda – o plantă excelentă pentru polenizatori.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="dahlia">
+      <h2><span class="emoji-flor">🌸</span> Dahlia</h2>
+      <ul>
+        <li>Dahlia este floarea națională a Mexicului.</li>
+        <li>Există dahlia cu flori mai mari de 25 cm în diametru.</li>
+        <li>Tuberculii de dahlia au fost cândva folosiți ca hrană.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="iris">
+      <h2><span class="emoji-flor">⚜️</span> Iris</h2>
+      <ul>
+        <li>Numele vine din zeița greacă Iris, mesageră a curcubeului.</li>
+        <li>Simbolul heraldic al Franței (fleur-de-lis) este inspirat de iris.</li>
+        <li>Există peste 300 de specii, de la mov la galben și alb.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="magnolie">
+      <h2><span class="emoji-flor">🌸</span> Magnolie</h2>
+      <ul>
+        <li>Magnoliile există pe Pământ de peste 100 de milioane de ani.</li>
+        <li>Au apărut înaintea albinelor – se polenizează prin beetle.</li>
+        <li>Parfumul magnoliei este intens și folosit în parfumerie.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="lotus">
+      <h2><span class="emoji-flor">🪷</span> Lotus</h2>
+      <ul>
+        <li>În Asia, lotusul simbolizează puritatea și iluminarea spirituală.</li>
+        <li>Sămânța de lotus poate germina după sute de ani.</li>
+        <li>Frunzele lotusului resping apa – efectul „lotus” studiat în știință.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="gardenia">
+      <h2><span class="emoji-flor">🤍</span> Gardenia</h2>
+      <ul>
+        <li>Gardenia este numită adesea „floarea secretelor” datorită parfumului puternic.</li>
+        <li>Petalele albe se îngălbenesc natural după câteva zile de la deschidere.</li>
+        <li>În limba florilor, exprimă admirație și „tu ești dragă”.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="frezie">
+      <h2><span class="emoji-flor">💐</span> Frezie</h2>
+      <ul>
+        <li>Frezia a fost descoperită în Africa de Sud în secolul XIX.</li>
+        <li>Parfumul este dulce și folosit în multe parfumuri de primăvară.</li>
+        <li>Fiecare culoare are o semnificație: alb – inocență, galben – bucurie.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="anemona">
+      <h2><span class="emoji-flor">🌺</span> Anemonă</h2>
+      <ul>
+        <li>În mitologia greacă, anemona ar fi răsărit din lacrimile Afroditei.</li>
+        <li>Numele înseamnă „vânt” – florile se mișcă ușor la adiere.</li>
+        <li>Există specii de câmp și specii de grădină, foarte colorate.</li>
+      </ul>
+    </section>
+
+    <section class="floare" id="gladiol">
+      <h2><span class="emoji-flor">🌷</span> Gladiol</h2>
+      <ul>
+        <li>Numele vine din latină „gladius” – sabie, după forma frunzelor.</li>
+        <li>Simbolizează tăria caracterului și sinceritatea.</li>
+        <li>Inflorește pe o tulpină înaltă, cu flori deschise una după alta.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    /* —— Meniu deschis / închis —— */
+    const meniuSite = document.getElementById('meniuSite');
+    const btnMeniu = document.getElementById('btnMeniu');
+    const meniuOverlay = document.getElementById('meniuOverlay');
+    const btnInchideMeniu = document.getElementById('btnInchideMeniu');
+    const linkuriMeniu = document.querySelectorAll('.lista-meniu a');
+
+    function meniuDeschis() {
+      return meniuSite.classList.contains('deschis');
+    }
+
+    function setMeniu(deschis) {
+      meniuSite.classList.toggle('deschis', deschis);
+      meniuOverlay.classList.toggle('activ', deschis);
+      btnMeniu.setAttribute('aria-expanded', deschis);
+      btnMeniu.setAttribute('aria-label', deschis ? 'Închide meniul' : 'Deschide meniul');
+      meniuOverlay.setAttribute('aria-hidden', !deschis);
+      document.body.classList.toggle('meniu-blocat', deschis);
+    }
+
+   
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && meniuDeschis()) setMeniu(false);
+    });
+
+    const sectiuni = document.querySelectorAll('.floare');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('apare');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    sectiuni.forEach(sec => observer.observe(sec));
+
+    const linkuriCuprins = document.querySelectorAll('.link-cuprins');
+    const numeCurent = document.getElementById('numeCurent');
+    const baraProgres = document.getElementById('baraProgres');
+    const progresText = document.getElementById('progresText');
+    const baraWrap = document.getElementById('baraProgresWrap');
+    const btnSus = document.getElementById('btnSus');
+    const cautaFlori = document.getElementById('cautaFlori');
+    const cautaFloriMobil = document.getElementById('cautaFloriMobil');
+    const btnReset = document.getElementById('btnReset');
+
+    const titluriFlori = {
+      trandafir: '🌹 Trandafir',
+      lalea: '🌷 Lalea',
+      margareta: '🌼 Margareta',
+      orhidee: '🌺 Orhidee',
+      crin: '🌸 Crin',
+      bujor: '🌺 Bujor',
+      'floarea-soarelui': '🌻 Floarea-soarelui',
+      lacramioara: '🌼 Lăcrămioara',
+      narcisa: '🌼 Narcisă',
+      hibiscus: '🌺 Hibiscus',
+      lavanda: '💜 Lavandă',
+      dahlia: '🌸 Dahlia',
+      iris: '⚜️ Iris',
+      magnolie: '🌸 Magnolie',
+      lotus: '🪷 Lotus',
+      gardenia: '🤍 Gardenia',
+      frezie: '💐 Frezie',
+      anemona: '🌺 Anemonă',
+      gladiol: '🌷 Gladiol'
+    };
+
+    function seteazaActiv(id) {
+      linkuriCuprins.forEach(l => l.classList.toggle('activ', l.dataset.id === id));
+      if (id && titluriFlori[id]) numeCurent.textContent = titluriFlori[id];
+    }
+
+    linkuriCuprins.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const el = document.getElementById(link.dataset.id);
+        if (!el) return;
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.classList.add('pulse');
+        setTimeout(() => el.classList.remove('pulse'), 1200);
+      });
+    });
+
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) seteazaActiv(entry.target.id);
+      });
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+
+    sectiuni.forEach(sec => spyObserver.observe(sec));
+
+    function actualizeazaProgres() {
+      const main = document.querySelector('.continut');
+      if (!main) return;
+      const rect = main.getBoundingClientRect();
+      const total = main.offsetHeight - window.innerHeight;
+      const parcurs = Math.min(Math.max(-rect.top, 0), total);
+      const pct = total > 0 ? Math.round((parcurs / total) * 100) : 0;
+      baraProgres.style.width = pct + '%';
+      progresText.textContent = pct + '% citit';
+      baraWrap.setAttribute('aria-valuenow', pct);
+      btnSus.hidden = window.scrollY < 400;
+    }
+
+    window.addEventListener('scroll', actualizeazaProgres, { passive: true });
+    actualizeazaProgres();
+
+    btnSus.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function normalizeaza(s) {
+      return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function filtreazaFlori(valoare) {
+      const q = normalizeaza(valoare.trim());
+      let vizibile = 0;
+      sectiuni.forEach(sec => {
+        const h2 = sec.querySelector('h2');
+        const text = normalizeaza(h2 ? h2.textContent : '');
+        const match = !q || text.includes(q);
+        sec.classList.toggle('ascuns', !match);
+        if (match) vizibile++;
+      });
+      if (btnReset) btnReset.hidden = !q;
+      if (vizibile === 0 && numeCurent) numeCurent.textContent = 'Nicio potrivire';
+    }
+
+    function onCautare(e) {
+      const val = e.target.value;
+      if (cautaFlori) cautaFlori.value = val;
+      if (cautaFloriMobil) cautaFloriMobil.value = val;
+      filtreazaFlori(val);
+    }
+
+    if (cautaFlori) cautaFlori.addEventListener('input', onCautare);
+    if (cautaFloriMobil) cautaFloriMobil.addEventListener('input', onCautare);
+
+    if (btnReset) {
+      btnReset.addEventListener('click', () => {
+        if (cautaFlori) cautaFlori.value = '';
+        if (cautaFloriMobil) cautaFloriMobil.value = '';
+        sectiuni.forEach(sec => sec.classList.remove('ascuns'));
+        btnReset.hidden = true;
+        const activ = document.querySelector('.link-cuprins.activ');
+        if (activ && numeCurent) numeCurent.textContent = titluriFlori[activ.dataset.id] || '—';
+      });
+    }
+  </script>
+</body>
+</html>

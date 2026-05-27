@@ -1,0 +1,218 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #f6f5f0;
+  color: #3e3c2f;
+}
+
+/* MENIU ASIGURAT DIN STILUL TAU */
+.meniu-site {
+  background-color: #f3f0ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #c4b497;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3f2e1e;
+}
+
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.meniu-site li a {
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover, .meniu-site li a:hover::after {
+  color: #7c9a49;
+  width: 100%;
+}
+
+/* BANNER PRINCIPAL */
+.banner-forum {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f8e8f0, #f3f0ea);
+  border-bottom: 1px solid #e0dbd3;
+}
+
+.banner-forum h1 {
+  font-size: 38px;
+  color: #3f2e1e;
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+.banner-forum p {
+  font-size: 18px;
+  color: #6b5b4b;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* CONTAINER PAGINA */
+.container-forum {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 850px) {
+  .container-forum {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FORMULARE SI ZONE */
+.zona-contact, .zona-comentarii {
+  background: #fffaf6;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2d5c33;
+  margin-top: 0;
+}
+
+.formular-contact {
+  margin-top: 25px;
+}
+
+.grup-input {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grup-input label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #5a4a3a;
+}
+
+.grup-input input, .grup-input textarea, .grup-input select {
+  padding: 12px;
+  border: 1px solid #c4b497;
+  border-radius: 6px;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #3e3c2f;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.grup-input input:focus, .grup-input textarea:focus, .grup-input select:focus {
+  border-color: #7c9a49;
+}
+
+.buton-verde {
+  background-color: #2d5c33;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.buton-verde:hover {
+  background-color: #1e3f22;
+}
+
+/* DISCUTII / FORUM CARDS */
+.lista-postari {
+  margin-top: 40px;
+  border-top: 2px dashed #c4b497;
+  padding-top: 20px;
+}
+
+.postare-card {
+  background: white;
+  border-left: 4px solid #7c9a49;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.postare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.postare-autor {
+  font-weight: bold;
+  color: #3f2e1e;
+}
+
+.postare-eticheta {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.postare-eticheta.review { background-color: #e8f5e9; color: #2e7d32; }
+.postare-eticheta.intrebare { background-color: #e3f2fd; color: #1565c0; }
+.postare-eticheta.sugestie { background-color: #fff3e0; color: #ef6c00; }
+
+.postare-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #f3f0ea;
+  margin-top: 60px;
+  font-size: 18px;
+  color: #2d5c33;
+  border-top: 1px solid #e0dbd3;
+}

@@ -1,0 +1,120 @@
+body{
+margin:0;
+font-family:'Open Sans', sans-serif;
+background:#faf7f2;
+color:#444;
+}
+
+/* Meniu sus – același design ca pe celelalte pagini */
+.meniu-site {
+  background-color: #f3f0ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #c4b497;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3f2e1e;
+}
+
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.meniu-site li a {
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;
+}
+
+h1{
+text-align:center;
+font-family:'Playfair Display', serif;
+font-size:55px;
+margin-top:40px;
+color:#2f5d3a;
+}
+
+.intro{
+max-width:900px;
+margin:20px auto 40px auto;
+text-align:center;
+font-size:18px;
+line-height:1.7;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+overflow:hidden;
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h2{
+font-family:'Playfair Display', serif;
+font-size:24px;
+padding:15px 20px 5px 20px;
+color:#355e3b;
+}
+
+.card p{
+padding:0 20px 20px 20px;
+line-height:1.6;
+font-size:15px;
+}

@@ -1,0 +1,188 @@
+body{
+    background-color: rgb(255, 207, 247);
+    padding: 40px 20px;
+}
+.titlu{
+    font-size:100px;
+    color: rgb(0, 0, 0);
+   display:flex;
+   justify-content: center; 
+}
+#subtitlu{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(8, 4, 6);
+}
+.meniu-site {
+  background-color: #e7e4dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Logo stilizat */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f2e1e;
+  font-family: 'Georgia', serif;
+}
+
+/* Lista de linkuri */
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Linkuri stilizate cu linie animată */
+.meniu-site li a {
+  position: relative;
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;
+}
+
+/* Animatie la încărcare */
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+.meniu-site {
+  background-color: #f3f0ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #c4b497;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3f2e1e;
+}
+
+
+ body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fffaf7;
+      color: #4a2c2a;
+      text-align: center;
+    }
+
+    header {
+       
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #00000070;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    header h2 {
+      font-size: 1.8em;
+      font-weight: normal;
+      margin-top: 0.5em;
+    }
+
+    .welcome-section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 1.2em;
+    }
+
+    .welcome-section h3 {
+      font-size: 2em;
+      color: #a14f4f;
+      margin-bottom: 20px;
+    }
+ #img1{background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6'); }
+ #inceput{ 
+  height: auto;
+ } 
+ .meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.meniu-site li a {
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;}

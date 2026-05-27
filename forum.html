@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum & Contact - FlowerArt</title>
+  <link rel="stylesheet" href="forum.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="meniu-site">
+    <div class="logo">🌸 FlowerArt</div>
+    <ul>
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="Diversitatea florilor.html">Diversitatea florilor</a></li>
+      <li><a href="istorie.html">Istoria florilor</a></li>
+      <li><a href="Galerie.html">Galerie de buchete</a></li>
+      <li><a href="curiozitati.html">Curiozități semnificative</a></li>
+      <li><a href="calatoria.html">Calatoria unei flori</a></li>
+      <li><a href="8martie.html">8 Martie</a></li>
+      <li><a href="Calendarul florilor.html">Calendarul florilor</a></li>
+      <li><a href="rolul-florilor.html">Rolul florilor</a></li>
+      <li><a href="forum.html">Forum & Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner-forum">
+  <h1>Comunitatea FlowerArt</h1>
+  <p>Locul unde iubitorii de flori pot pune întrebări, lăsa recenzii sau ne pot contacta direct.</p>
+</section>
+
+<div class="container-forum">
+  
+  <section class="zona-contact">
+    <h2> Trimite-ne un mesaj</h2>
+    <p>Ai o întrebare urgentă sau vrei să colaborezi cu noi? Completează formularul de mai jos:</p>
+    
+    <form action=https://formspree.io/f/mojbydwb method="POST" class="formular-contact">
+  <div class="grup-input">
+    <label for="nume-contact">Nume complet</label>
+    <input type="text" id="nume-contact" name="name" placeholder="Numele tău..." required>
+  </div>
+  
+  <div class="grup-input">
+    <label for="email-contact">Adresă de E-mail</label>
+    <input type="email" id="email-contact" name="email" placeholder="exemplu@mail.com" required>
+  </div>
+  
+  <div class="grup-input">
+    <label for="mesaj-contact">Mesajul tău</label>
+    <textarea id="mesaj-contact" name="message" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea>
+  </div>
+  
+  <button type="submit" class="buton-verde">Trimite Mesajul</button>
+</form>
+  </section>
+
+  <section class="zona-comentarii">
+    <h2> Adaugă o întrebare sau o recenzie</h2>
+    
+    <form id="formular-postare" class="formular-contact">
+      <div class="grup-input">
+        <label for="autor-postare">Numele tău</label>
+        <input type="text" id="autor-postare" placeholder="Cum te numești?" required>
+      </div>
+      <div class="grup-input">
+        <label for="tip-postare">Tipul mesajului</label>
+        <select id="tip-postare">
+          <option value="Review ⭐">Recenzie (Review)</option>
+          <option value="Întrebare ❓">Întrebare</option>
+          <option value="Sugestie 💡">Sugestie</option>
+        </select>
+      </div>
+      <div class="grup-input">
+        <label for="text-postare">Mesajul tău pentru comunitate</label>
+        <textarea id="text-postare" rows="4" placeholder="Împărtășește gândurile tale cu noi..." required></textarea>
+      </div>
+      <button type="submit" class="buton-verde">Postează pe Forum</button>
+    </form>
+
+   <div class="lista-postari">
+  <h3>Discuții recente</h3>
+  <div id="container-mesaje">
+    </div>
+</div>
+<footer>
+  <p>🌸 FlowerArt — Conectăm oamenii prin frumusețea naturii. 🌸</p>
+</footer>
+
+<script src="forum.js"></script>
+</body>
+</html>

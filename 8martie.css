@@ -1,0 +1,215 @@
+body{
+
+font-family:'Open Sans',sans-serif;
+margin:0;
+background:#f6f5f0;
+color:#3e3c2f;
+
+}
+
+
+/* MENIU */
+
+.meniu-site {
+  background-color: #f3f0ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #c4b497;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #3f2e1e;
+}
+
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.meniu-site li a {
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;
+}
+
+/* GALERIE */
+
+.flori{
+
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.galerie{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.card{
+
+background:white;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+overflow:hidden;
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+.card h3{
+
+margin:15px;
+color:#2d5c33;
+
+}
+
+.card p{
+
+margin:0 15px 20px;
+
+}
+
+
+
+/* LISTA */
+
+.lista{
+
+list-style:none;
+font-size:18px;
+padding:0;
+
+}
+
+.lista li{
+
+margin:10px 0;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:30px;
+background:#f3f0ea;
+margin-top:80px;
+font-size:20px;
+color:#2d5c33;
+
+}
+.banner-8martie {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f8e8f0, #f3f0ea);
+}
+
+.banner-8martie h1 {
+  font-size: 42px;
+  color: #3f2e1e;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.banner-8martie p {
+  font-size: 20px;
+  color: #6b5b4b;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+.sectiune {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fffaf6;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  font-family: Georgia, serif;
+}
+
+.sectiune h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #3f2e1e;
+  margin-bottom: 20px;
+}
+
+.sectiune p {
+  font-size: 18px;
+  color: #5a4a3a;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.lista li {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+.lista li:hover {
+  background-color: #f3f0ea;
+  border-radius: 8px;
+}
