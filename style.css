@@ -103,8 +103,42 @@ body{
   color: #3f2e1e;
 }
 
+.meniu-site ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
 
- body {
+.meniu-site li a {
+  text-decoration: none;
+  color: #3f2e1e;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.meniu-site li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #7c9a49;
+  transition: width 0.3s ease;
+}
+
+.meniu-site li a:hover {
+  color: #7c9a49;
+}
+
+.meniu-site li a:hover::after {
+  width: 100%;
+}
+body {
       margin: 0;
       font-family: 'Georgia', serif;
       background-color: #fffaf7;
@@ -150,39 +184,5 @@ body{
     }
  #img1{background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6'); }
  #inceput{ 
-  height: auto;
- } 
- .meniu-site ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.meniu-site li a {
-  text-decoration: none;
-  color: #3f2e1e;
-  font-weight: bold;
-  position: relative;
-  padding: 5px;
-  transition: color 0.3s ease;
-}
-
-.meniu-site li a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #7c9a49;
-  transition: width 0.3s ease;
-}
-
-.meniu-site li a:hover {
-  color: #7c9a49;
-}
-
-.meniu-site li a:hover::after {
-  width: 100%;}
+  height: 40vh;
+ }
